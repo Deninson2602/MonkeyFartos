@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/fondoAct">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/greenJNG">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Fartos Monkey Version"
+                android:layout_gravity="left"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/text_layout"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenidos a la versión más grotesca de Fartos"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:orientation="vertical">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_layout2"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quien salga primero de la jungla, ¡GANA!"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:orientation="vertical">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/players_layout"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add_player"
+            android:layout_width="175dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Añadir nuevo mono"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/green_jungle_button_background" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_remove_player"
+            android:layout_width="175dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Eliminar mono"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/green_jungle_button_background" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_start_game"
+            android:layout_width="175dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="A saltar"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/green_jungle_button_background" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
